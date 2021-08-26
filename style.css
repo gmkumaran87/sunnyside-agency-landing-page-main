@@ -87,7 +87,7 @@ nav {
 .center {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
 
 .center-container {
@@ -181,4 +181,106 @@ nav {
     font-size: 1.2rem;
     font-weight: bolder;
     line-height: 32px;
+}
+
+.testimony {
+    padding: 10% 2% 4% 2%;
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.testimony-header {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 5px;
+    font-family: 'Fraunces', serif;
+    color: hsl(210, 4%, 67%);
+}
+
+.testimonials {
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* grid-template-columns: repeat(3, 1fr); */
+    width: 70%;
+    margin: 20px auto;
+}
+
+.testimonials article {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
+}
+
+.testimonials img {
+    border-radius: 50%;
+}
+
+.testimonials p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1rem;
+    color: hsl(213, 9%, 39%);
+    font-weight: bolder;
+    line-height: 30px;
+    text-align: center;
+}
+
+.signature {
+    height: 70px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signature h2 {
+    color: black;
+    font-family: 'Fraunces';
+    font-size: 1.5rem;
+}
+
+.signature p {
+    color: hsl(210, 4%, 67%);
+}
+
+.third-section {
+    display: flex;
+    flex-flow: row;
+}
+
+.third-section img {
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3%;
+    background-color: hsl(168, 34%, 41%);
+    height: 300px;
+}
+
+footer .logo {
+    color: hsl(167, 40%, 24%);
+}
+
+.footer-link {
+    color: hsl(167, 40%, 24%);
+}
+
+.social-icons {
+    padding: 20px;
+}
+
+.img-icons {
+    margin-right: 10px;
 }
