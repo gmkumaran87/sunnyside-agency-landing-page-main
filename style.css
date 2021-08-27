@@ -21,6 +21,10 @@ nav {
     padding: 30px;
 }
 
+.toggle-bar {
+    display: none;
+}
+
 .nav-links {
     list-style-type: none;
     display: flex;
@@ -327,6 +331,9 @@ footer .logo {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+    .toggle-bar {
+        display: inline;
     }
     .nav-links {
         height: 0;
