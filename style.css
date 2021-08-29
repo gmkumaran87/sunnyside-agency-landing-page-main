@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    --transition: all 0.3s linear;
 }
 
 body {
@@ -338,16 +339,31 @@ footer .logo {
     .nav-links {
         height: 0;
         overflow: hidden;
+        z-index: 9;
         display: flex;
         flex-flow: column;
+        transition: var(--transition);
     }
     .nav-links a {
         display: block;
-        color: hsl(213, 9%, 39%)
+        color: hsl(213, 9%, 39%);
+        font-family: 'Barlow';
+        transition: var(--transition);
+        padding-bottom: 20px;
     }
     .show-links {
-        height: 10rem;
+        position: absolute;
+        top: 22%;
+        left: 10%;
+        height: 16rem;
         background-color: hsl(0, 0%, 100%);
+        width: 80%;
+        padding: 2rem;
+    }
+    .nav-btn {
+        background-color: hsl(51, 100%, 49%);
+        border: none;
+        border-radius: 40px;
     }
     header {
         height: 480px;
